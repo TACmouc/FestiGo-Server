@@ -2,7 +2,8 @@
 {
     "files.exclude": {
         "**/LICENSE": true,
-        "**.idea": true
+        "**.idea": true,
+        "**docs": true
     },
     "search.exclude": {
     }
