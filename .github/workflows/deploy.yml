@@ -36,7 +36,7 @@ jobs:
       run: |
         echo "$SSH_PRIVATE_KEY" > private_key
         chmod 600 private_key
-        scp -i private_key -r . $VPS_USER@$VPS_HOST:/home/$VPS_USER/FestiGo-Server
+        rsync -avz --exclude '.git' -e "ssh -i private_key" . $VPS_USER@$VPS_HOST:/home/$VPS_USER/FestiGo-Server
         ssh -i private_key $VPS_USER@$VPS_HOST << EOF
         pkill -f main.py || true
         cd /home/$VPS_USER/FestiGo-Server
