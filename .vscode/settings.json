@@ -1,0 +1,9 @@
+// .vscode/settings.json
+{
+    "files.exclude": {
+        "**/LICENSE": true,
+        "**.idea": true
+    },
+    "search.exclude": {
+    }
+}
