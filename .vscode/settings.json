@@ -3,7 +3,9 @@
     "files.exclude": {
         "**/LICENSE": true,
         "**.idea": true,
-        "**docs": true
+        "**docs": true,
+        "**/venv": true,
+        "**/__pycache__": true,
     },
     "search.exclude": {
     }
